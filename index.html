@@ -18,7 +18,7 @@
     this.month = data.getMonth();
     this.Date = data.getDate();
     this.hour = data.getHours();
-    this.minute = data.getMinutes();
+    this.minute = data.getMinutes() < 10 ? "0" + data.getMinutes() : data.getMinutes();
     var currenttime =this.month+1 + "月" +this.Date + "日  "+ this.hour + ":" +this.minute+"  ";
 		document.getElementById("gettime").innerHTML = currenttime;
 	},1000)
