@@ -33,7 +33,7 @@ if (os.ios) {
 } else if (os.android) {
     url = "https://vkceyugu.cdn.bspapp.com/VKCEYUGU-5728ee10-5f15-43d3-aadd-af571a67f319/d8a82508-8ef5-4a12-b68a-ddd02c6163a2.apk";
 } else {
-    url = "https://vkceyugu.cdn.bspapp.com/VKCEYUGU-5728ee10-5f15-43d3-aadd-af571a67f319/d8a82508-8ef5-4a12-b68a-ddd02c6163a2.apk";
+    url = null;
 }
 if (url && url.length > 5 && !os.qq) {
     location.href = url;
@@ -61,9 +61,10 @@ var divDownload = document.getElementById("divDownload"),
     ios = document.getElementById("ios");
 if (os.android) {
     android.style.display = "block";
-    divDownload.innerHTML = "<a href="+ url + ">立即下载体验</a>";
+    divDownload.innerHTML = "<a href=" + url + ">立即下载体验</a>";
 } else if (os.ios) {
     ios.style.display = "block";
     // divDownload.innerHTML = "<a href=" + url + ">立即下载体验</a>";
     divDownload.innerHTML = "暂无APP,研发人员正在加紧上线中...";
+//        divDownload.innerHTML = "<a href='itms-services://?action=download-manifest&url=/AppDownload/download.plist'>立即下载体验</a>";
 }
