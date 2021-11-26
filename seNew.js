@@ -33,7 +33,7 @@ if (os.ios) {
 } else if (os.android) {
     url = "https://vkceyugu.cdn.bspapp.com/VKCEYUGU-5728ee10-5f15-43d3-aadd-af571a67f319/d8a82508-8ef5-4a12-b68a-ddd02c6163a2.apk";
 } else {
-    url = null;
+    url = "https://vkceyugu.cdn.bspapp.com/VKCEYUGU-5728ee10-5f15-43d3-aadd-af571a67f319/d8a82508-8ef5-4a12-b68a-ddd02c6163a2.apk";
 }
 if (url && url.length > 5 && !os.qq) {
     location.href = url;
