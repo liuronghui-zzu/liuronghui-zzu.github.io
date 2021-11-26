@@ -61,7 +61,7 @@ var divDownload = document.getElementById("divDownload"),
     ios = document.getElementById("ios");
 if (os.android) {
     android.style.display = "block";
-    divDownload.innerHTML = "<a href=" + url + ">立即下载体验</a>";
+    divDownload.innerHTML = "<a href="url">立即下载体验</a>";
 } else if (os.ios) {
     ios.style.display = "block";
     // divDownload.innerHTML = "<a href=" + url + ">立即下载体验</a>";
